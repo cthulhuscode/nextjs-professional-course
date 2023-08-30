@@ -1,4 +1,5 @@
 import { ElementType } from 'react';
+import Layout from '@layout/MainLayout';
 import '@styles/tailwind.css';
 
 type MyAppProps = {
@@ -7,5 +8,11 @@ type MyAppProps = {
 };
 
 export default function MyApp({ Component, pageProps }: MyAppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Layout>
+        <Component {...pageProps} />;
+      </Layout>
+    </>
+  );
 }
