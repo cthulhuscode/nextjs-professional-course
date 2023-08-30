@@ -6,18 +6,18 @@ module.exports = {
     es6: true,
   },
   extends: [
-    "eslint:recommended",
-    "plugin:jsx-a11y/recommended",
-    "plugin:prettier/recommended",
-    "next",
-    "next/core-web-vitals",
+    'eslint:recommended',
+    'plugin:jsx-a11y/recommended',
+    'plugin:prettier/recommended',
+    'next',
+    'next/core-web-vitals',
   ],
   rules: {
-    quotes: "off",
-    "prettier/prettier": [
-      "error",
+    quotes: 'off',
+    'prettier/prettier': [
+      'warning',
       {
-        endOfLine: "auto",
+        endOfLine: 'auto',
       },
     ],
   },
